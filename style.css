@@ -1,3 +1,28 @@
+
+body {
+  background-color: #f3f3f3;
+}
+#row {
+  height: 100vh;
+  margin-top: -40px;
+}
+
+#paragraph-container {
+  background: white;
+  background-image: url('./images/chucknorrisbnw.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #jokes-paragraph {
-  min-height: 140px;
+  font-size: 1.3rem;
+  margin: 0;
+}
+#bottom-paragraph {
+  font-size: 0.7rem;
+  margin: 0;
 }

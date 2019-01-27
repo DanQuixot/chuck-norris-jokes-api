@@ -12,13 +12,20 @@
   <title>Chuck Norris Jokes</title>
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="row text-center">
-      <div class="col-md-6 offset-md-3">
-        <h1>Chuck Norris Jokes</h1>
-        <p id="jokes-paragraph" class="border rounded p-5"></p>
+  <div class="container">
+    <div class="row align-items-center justify-content-center" id="row">
+      <div class="col-lg-6">
+        <h1 class="text-center mb-3">Chuck Norris Jokes</h1>
+        <div id="paragraph-container" class="border rounded p-3 mb-3 text-center">
+          <p id="jokes-paragraph"></p>
+        </div>
         <button id="hit-me-button" type="button" class="btn btn-secondary btn-lg btn-block">Hit Me</button>
       </div>     
+    </div>
+    <div class="row align-items-end justify-content-end">
+      <div class="col-md-12 col-sm-10 text-right">
+        <p id="bottom-paragraph">If Chuck Norris would've been as cool as they say, I wouldn't have been able to finish this proj...</p> 
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
