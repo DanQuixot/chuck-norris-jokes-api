@@ -1,4 +1,4 @@
-// http://api.icndb.com/jokes/random
+
 
 document.getElementById('hit-me-button').addEventListener('click', loadJoke);
 
@@ -9,8 +9,11 @@ function loadJoke(){
 
   xhr.onload = function() {
     if (this.status == 200){
-      console.log(this.responseText);
+      let jokesObject = JSON.parse(this.responseText);
+
+      document.getElementById('jokes-paragraph').innerHTML = jokesObject.value.joke;
     }
+    
   }
   xhr.send();
 }
